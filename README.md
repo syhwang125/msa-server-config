@@ -24,11 +24,29 @@
   2) mvn spring-boot:run 
 
 # 브라우저에서 확인 
-http://config-server:8888/key
+http://config-server:8888/ke
+
 http://config-server:8888/sample-api/vdi
+
 http://config-server:8888/second-api/vdi
+
 http://eureka-server:8761/
+
 http://eureka-server:8761/actuator
+
 http://eureka-server:8761/actuator/health
+
 http://zuul-server:8080/actuator
+
 http://zuul-server:8080/actuator/health
+
+# 윈도우 열린 포트 확인 
+ $netstat -ano   or $netstat -ano | grep :9999
+
+C:\Users\Administrator>netstat -nap |netstat -ano
+
+C:\Users\Administrator>tasklist| findstr 10976
+java.exe                     10976 Console                    1    387,808 K
+
+C:\Users\Administrator>taskkill /f /pid 10976
+성공: 프로세스(PID 10976)가 종료되었습니다.
