@@ -14,5 +14,21 @@
   2) 각 프로젝트에서 /src/main/resources/application.yml 파일 생성 
 
 # 실행하기 
+   MINGW64:/t/eclipseworkspace4mes/sboot-servers/sboot-config-server
+   MINGW64:/t/eclipseworkspace4mes/sboot-servers/sboot-eureka-server
+   MINGW64:/t/eclipseworkspace4mes/sboot-servers/sboot-zuul-server
+    /c/Apache/apache-maven-3.5.4/bin/mvn clean install
+    /c/Apache/apache-maven-3.5.4/bin/mvn spring-boot:run
+    
   1) mvn clean install 
   2) mvn spring-boot:run 
+
+# 브라우저에서 확인 
+http://config-server:8888/key
+http://config-server:8888/sample-api/vdi
+http://config-server:8888/second-api/vdi
+http://eureka-server:8761/
+http://eureka-server:8761/actuator
+http://eureka-server:8761/actuator/health
+http://zuul-server:8080/actuator
+http://zuul-server:8080/actuator/health
