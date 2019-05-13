@@ -1,0 +1,27 @@
+
+# postman 
+1) https://www.getpostman.com/ 다운로드 및 설치 
+2) 개발한 API를 테스트하고, 테스트 결과를 공유하여 API 개발의 생산성을 높여주는 플랫폼
+
+# 사용법
+1) Get  
+http://localhost:8080/sample    
+Send button click
+
+2) POST 
+http://localhost:8080/sample/
+Body > Json 선택 후 아래와 같이 파라미터 입력 후 Send 버튼 클릭 
+{
+  "condition":"syhwang",
+	"attr1":"poscoict",
+	"attr2":"pangyo"
+}
+
+3) PUT
+http://localhost:8080/sample/syhwang 
+Body > Json 선택 후 아래와 같이 파라미터 입력 후 Send 버튼 클릭 
+{
+	"attr1":"ibm",
+	"attr2":"seoul"
+}
+
