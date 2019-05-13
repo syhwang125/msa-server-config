@@ -41,12 +41,14 @@ http://zuul-server:8080/actuator
 http://zuul-server:8080/actuator/health
 
 # 윈도우 열린 포트 확인 
- $netstat -ano   or $netstat -ano | grep :9999
+$netstat -ano | grep :9999       // 해당 포트의 프로세스ID찾기 
 
-C:\Users\Administrator>netstat -nap |netstat -ano
+C:\Users\Administrator>netstat -ano     // 현재 실행중인 프로세스, 포트확인 
 
-C:\Users\Administrator>tasklist| findstr 10976
+C:\Users\Administrator>tasklist| findstr 10976   
+
 java.exe                     10976 Console                    1    387,808 K
 
 C:\Users\Administrator>taskkill /f /pid 10976
+
 성공: 프로세스(PID 10976)가 종료되었습니다.
